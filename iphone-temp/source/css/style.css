@@ -1,0 +1,214 @@
+.phone {
+  width: 350px;
+  height: 650px;
+  border: 10px solid black;
+  border-radius: 40px;
+  position: relative;
+  padding: 0 30px;
+  background-color: #0a0a0a;
+  background-size: cover;
+  padding-top: 10%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.phone.phone-bg {
+  background-image: url("../../gabby-orcutt-Nu4u9g7Sgdw-unsplash.jpg");
+}
+
+.phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 20px;
+  width: 160px;
+  background-color: black;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.phone .time {
+  position: absolute;
+  top: 4px;
+  left: 35px;
+  font-size: 14px;
+  color: white;
+}
+
+.phone .charge {
+  position: absolute;
+  top: 7px;
+  right: 30px;
+  font-size: 12px;
+  color: white;
+}
+
+.phone .charge i {
+  padding: 3px;
+}
+
+.phone .return-back {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.phone .return-back button {
+  width: 130px;
+  height: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.phone .inner {
+  height: 100%;
+}
+
+.phone .inner .content-menu {
+  display: none;
+}
+
+.phone .inner .content-menu button {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone .inner .content-menu.content-block {
+  display: block;
+}
+
+.phone .inner .content-calculator {
+  display: none;
+}
+
+.phone .inner .content-calculator.content-block {
+  display: block;
+}
+
+.phone .inner .content-calculator input {
+  width: 92%;
+  height: 90px;
+  font-size: 30px;
+  text-align: end;
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+.phone .inner .content-calculator .calc-row {
+  margin-bottom: 12px;
+}
+
+.phone .inner .content-calculator .calc-row .calc-btn {
+  font-size: 25px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  background-color: #4e4d4dc2;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.phone .inner .content-calculator .calc-row .calc-btn.operand {
+  background-color: orange;
+}
+
+.phone .inner .content-calculator .calc-row .calc-btn.operand:hover {
+  background-color: #dfdddd;
+  color: orange;
+}
+
+.phone .inner .content-calculator .calc-row .calc-btn.zero {
+  width: 130px;
+  border-radius: 30px;
+}
+
+.phone .inner .content-calculator .calc-row .calc-btn:hover {
+  background-color: #656363;
+}
+
+.phone .inner .content-wp {
+  display: none;
+}
+
+.phone .inner .content-wp.content-block {
+  display: block;
+}
+
+.blue {
+  background: -webkit-gradient(linear, left bottom, left top, from(#5b8be8), to(#121778));
+  background: linear-gradient(0deg, #5b8be8 0%, #121778 100%);
+  color: white;
+}
+
+.green {
+  background: -webkit-gradient(linear, left bottom, left top, from(#149804), to(#297812));
+  background: linear-gradient(0deg, #149804 0%, #297812 100%);
+  color: white;
+}
+
+.gray {
+  background: -webkit-gradient(linear, left bottom, left top, from(#818181), to(#b6b6b6));
+  background: linear-gradient(0deg, #818181 0%, #b6b6b6 100%);
+}
+
+.gray-flat {
+  background-color: #c3c3c3;
+}
+
+.scaleIn {
+  -webkit-animation: scaleIn 0.2s;
+          animation: scaleIn 0.2s;
+}
+
+@-webkit-keyframes scaleIn {
+  from {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
